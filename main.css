@@ -1,0 +1,217 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
+
+/* Hero Styling */
+.hero {
+    background: url('../assets/images/kadImg.jpeg') center center/cover no-repeat;
+    min-height: 90vh;
+    position: relative;
+}
+
+
+section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+#about {
+    padding-bottom: 3rem;
+}
+
+#contact {
+    padding-top: 3rem;
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Navbar & Header */
+.navbar-brand span {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.top-bar i {
+    color: #5aa9b4;
+}
+
+.btn-outline-info {
+    border-width: 2px;
+    font-weight: 500;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+/* Gallery */
+.gallery-img {
+  width: 100%;
+    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+.tab-pane{
+    overflow-x: hidden !important;
+}
+
+
+/* About Section */
+#about .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+#about .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about .list-group-item {
+  padding-left: 0;
+  background-color: transparent;
+}
+
+#about .card-title i {
+  font-size: 1.2em;
+}
+
+/* History Card */
+#about .bg-primary {
+  background-color: #0056b3/*#002244 */!important;
+}
+
+/* Social Links Styling */
+.social-links {
+  gap: 1.5rem !important;
+}
+
+.social-btn {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-btn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* WhatsApp Hover Effect */
+.whatsapp-btn:hover {
+  background-color: #25D366 !important;
+  border-color: white;
+}
+
+.whatsapp-btn:hover i {
+  color: white !important;
+  animation: pulse 0.5s ease;
+}
+
+/* Facebook Hover Effect */
+.facebook-btn:hover {
+  background-color: #1877F2 !important;
+  border-color: white;
+}
+
+.facebook-btn:hover i {
+  color: white !important;
+  animation: bounce 0.5s ease;
+}
+
+/* Instagram Hover Effect */
+.instagram-btn:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) !important;
+  border-color: white;
+}
+
+.instagram-btn:hover i {
+  color: white !important;
+  animation: shake 0.5s ease;
+}
+
+/* Twitter Hover Effect */
+.twitter-btn:hover {
+  background-color: #1DA1F2 !important;
+  border-color: white;
+}
+
+.twitter-btn:hover i {
+  color: white !important;
+  animation: spin 0.5s ease;
+}
+/* Email Hover Effect */
+.email-btn:hover {
+  background: linear-gradient(45deg, #D44638, #E4B429, #D44638) !important;
+  border-color: white;
+}
+
+.email-btn:hover i {
+  color: white !important;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Animations */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#JoinUsBtn {
+  background-color: #007BFF; /* Bootstrap-style blue */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /* Rounded edges */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 100%;
+}
+#JoinUsBtn:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Deeper shadow */
+}
