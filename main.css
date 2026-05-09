@@ -2,7 +2,7 @@
 
 /* Hero Styling */
 .hero {
-    background: url('../assets/images/kadImg.jpeg') center center/cover no-repeat;
+    background: url('..kadImg.jpeg') center center/cover no-repeat;
     min-height: 90vh;
     position: relative;
 }
